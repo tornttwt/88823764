@@ -1,0 +1,13 @@
+# docker-compose.yml
+services:
+  web:
+    image: php:8-apache
+    ports:
+      - 80:80
+    volumes:
+      - ./public_html:/var/www/html
+
+
+# docker --version
+# docker compose up -d
+# docker compose down
